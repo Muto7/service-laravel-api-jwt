@@ -1,0 +1,19 @@
+//GET barrier
+GET http://127.0.0.1:8000/api/me
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzExODI0ODA2LCJleHAiOjE3MTE4Mjg0MDYsIm5iZiI6MTcxMTgyNDgwNiwianRpIjoiV0V2bHNXZWxERzgwT2dTRiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.P9tHx1WmytI_fyua71XLGDZiUGWFQw-SAwQYrftBMxQ
+
+
+###
+//login
+POST http://127.0.0.1:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "muto@test.com",
+    "password": "password"
+}
+
+###
+//logout
+POST http://127.0.0.1:8000/api/logout
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzExODI0ODA2LCJleHAiOjE3MTE4Mjg0MDYsIm5iZiI6MTcxMTgyNDgwNiwianRpIjoiV0V2bHNXZWxERzgwT2dTRiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.P9tHx1WmytI_fyua71XLGDZiUGWFQw-SAwQYrftBMxQ
